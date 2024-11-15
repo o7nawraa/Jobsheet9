@@ -20,9 +20,12 @@ public class LinearSearch07 {
         for(int i = 0; i < arrayInt.length; i++) {
             if (arrayInt[i]==key) {
                 result = i;
+                System.out.println("The key in the array is located at index position " + result);
+                break;
+            } else {
+                System.out.print("Key not found");
                 break;
             }
         }
-        System.out.println("The key in the array is located at index position " + result);
     }
 }
